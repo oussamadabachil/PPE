@@ -129,7 +129,9 @@ ul li a:hover{
     border-bottom-left-radius: .5rem;
     border-top-left-radius: .5rem;
 }
-
+.b_mobile{
+    display: none;
+}
 .btn{
     width: 10rem;
     height: 4rem;
@@ -334,7 +336,7 @@ ul li a:hover{
         margin-top:10rem;
     }
     .grid .b{
-      display: block;
+      display: none;
       width: 33%;
       height: auto;
       margin: 0 auto;
@@ -417,4 +419,19 @@ ul li a:hover{
           font-size: 2.3rem;
           padding-top: 2rem;
       }
+      .icon .logo{
+          display: none;
+      }
+      main nav .search{
+          display: none;
+      }
+
+      .b_mobile{
+        display: block;
+     margin-left: 20rem;
+     margin-top: 6rem;
+     margin-bottom: -16rem;
+
+
+}
 }
