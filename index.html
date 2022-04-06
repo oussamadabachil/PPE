@@ -18,16 +18,17 @@
         <section class="b_mobile">
             <form class="form" action="" method="post">
                 <h2>Login Here</h2>
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" name="" placeholder="Enter Password Here">
-                <button class="btnn">Login</button>
+                <input type="email" name="email" placeholder="Enter Email Here"  class="email_input_mob">
+                <input type="password" name="" placeholder="Enter Password Here" class="pwd_input_mob">
+                <input type="submit" class="btnn btn_submit_mob" value="Login">
 
                 <p class="link">Don't have an account<br>
                 <a href="#">Sign up </a> here</p>
                 <p class="liw">Log in with</p>
 
                 <section class="icons">
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>         
                     <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
                     <a href="#"><ion-icon name="logo-google"></ion-icon></a>
                     <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
@@ -66,8 +67,8 @@
                     <li><a href="#">DESIGN</a></li>
                     <li><a href="#">CONTACT</a></li>   
                     <li>
-                        <form class="search" action="#" method="post">
-                            <input class="srch" type="search" name="search" placeholder="Effectuez une recherche">
+                        <form class="search" action="https://www.google.com/search" method="post">
+                            <input class="srch" type="search" name="search" name="q" placeholder="Effectuez une recherche">
                             <input type="submit" name="submit" value="Search" class="btn" id="">
                         </form>
             </li>    
@@ -94,11 +95,11 @@
         
                 </section>
                 <section class="b">
-                    <form class="form" action="" method="post">
+                    <form class="form" action="#" method="get">
                         <h2>Login Here</h2>
-                        <input type="email" name="email" placeholder="Enter Email Here">
-                        <input type="password" name="" placeholder="Enter Password Here">
-                        <button class="btnn">Login</button>
+                        <input type="email" name="email" placeholder="Enter Email Here" class="email_input">
+                        <input type="password" name="" placeholder="Enter Password Here" class="pwd_input">
+                        <input type="submit" class="btnn btn_submit_pc" value="Login">
     
                         <p class="link">Don't have an account<br>
                         <a href="#">Sign up </a> here</p>
@@ -119,5 +120,7 @@
     </main>
     <script src="./app/app.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>
