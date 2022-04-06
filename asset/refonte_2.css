@@ -434,5 +434,14 @@ ul li a:hover{
 
 
 }
-
+.search{
+border-bottom: .3rem solid #fff;
+}
+.btn{
+    color: #000;
+    background-color: #fff;
+}
+nav{
+    display: none;
+}
 }
