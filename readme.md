@@ -94,5 +94,5 @@ img{
 ```
 
 #### Par ailleurs 
-j'ai utilisé la bibliotheque SweetAlert pour des popups plus designs et dynamiques
+J'ai utilisé la bibliotheque SweetAlert pour des popups plus designs et dynamiques
 
