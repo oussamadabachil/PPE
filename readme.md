@@ -96,3 +96,5 @@ img{
 #### Par ailleurs 
 J'ai utilisé la bibliotheque SweetAlert pour des popups plus designs et dynamiques
 
+https://sweetalert2.github.io Voir
+[Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
