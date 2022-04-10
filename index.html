@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de connexkon">
     <title>Webpage Design</title>
-    <link rel="stylesheet" href="./asset/refonte_2.css">
+    <link rel="stylesheet" href="./css/refonte_2.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    
 
 </head>
 <body>
 <header class="icon">
     <h1 class="logo">PraRoz</h1>
 </header>
-    <main>2
+    <main>
 
         <section class="b_mobile">
-            <form class="form" action="" method="post">
+            <form class="form" action="#" method="post">
                 <h2>Login Here</h2>
                 <input type="email" name="email" placeholder="Enter Email Here"  class="email_input_mob">
                 <input type="password" name="" placeholder="Enter Password Here" class="pwd_input_mob">
@@ -38,7 +40,7 @@
         </section>
         <nav>
             
-                <ul class="menu">
+                <ul class="menu" >
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">SERVICE</a></li>
@@ -46,20 +48,22 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
 
-                <form class="search" action="https://www.google.com/search" method="get">
-                    <input class="srch" type="search" name="search" placeholder="Effectuez une recherche">
-                <input type="submit" name="submit" value="Search" class="btn" id="">
+                <form class="search" action = "https://www.google.com/search" method="get"> 
+                <input class="srch" type="search" name="q" placeholder="Effectuez une recherche" aria-label="search">
+                <input type="submit" name="submit" value="Search" class="btn">
+
+
             </form>
 
         </nav> 
         <section class="mobile_nav">
             
             <h1>PraRoz</h1>
-            <div class="center">
+        <button class="center">
                 <div></div>
-            </div>
+        </button>
 
-              <section class="page_hide">
+              <section class="page_show">
                   <h3>TABAI</h3>
                   <ul>
                     <li><a href="#">HOME</a></li>
@@ -69,7 +73,7 @@
                     <li><a href="#">CONTACT</a></li>   
                     <li>
                         <form class="search" action="https://www.google.com/search" method="get">
-                            <input class="srch" type="search" name="search" name="q" placeholder="Effectuez une recherche">
+                            <input class="srch" type="search" name="q" placeholder="Effectuez une recherche" aria-label="input_search">
                             <input type="submit" name="submit" value="Search" class="btn" id="">
                         </form>
             </li>    

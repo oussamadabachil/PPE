@@ -4,7 +4,7 @@ font-size: 62.5%;
 /* 16px * 62,5 10.00rem */
 }
 body{
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(./zizi.jpeg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../asset/zizi.jpeg);
     background-position: center;
     background-size: cover;
     font: 1.6rem sans-serif;
@@ -217,10 +217,10 @@ section h3{
 }
 
 .form{
-    width: 25rem;
+   width: 25rem;
     height: 41rem;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-   
+   margin: 0 auto;
     border-radius: 1rem;
     padding: 2.5rem;
 }
@@ -338,6 +338,22 @@ section h3{
     float: right;
 }
 @media screen and (max-width: 1067px){
+    .content h1{
+        font-size: 4rem;
+    }
+    .content span{
+        font-size: 5rem;
+
+    }
+    .form{
+       max-width: 90%;
+        height: 41rem;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+       margin: 0 auto;
+        border-radius: 1rem;
+        padding: 2.5rem;
+    }
+    
     .grid{
         margin-top:10rem;
     }
@@ -413,15 +429,15 @@ section h3{
        display: block;
        background-color:#ff73001a;
         top:5rem ;
-        left: -200rem;
+        left: -30rem;
         transition: all .5s;
       }
 
-      .page_hide>ul{
+      .page_hide>ul,.page_show>ul{
           
           display: block;
       }
-      .page_hide>ul>li{
+      .page_hide>ul>li,.page_show>ul>li{
           font-size: 2.3rem;
           padding-top: 2rem;
       }
@@ -434,7 +450,6 @@ section h3{
 
       .b_mobile{
         display: block;
-     margin-left: 7rem;
      margin-top: 6rem;
      margin-bottom: -6rem;
 
@@ -449,5 +464,9 @@ border-bottom: .3rem solid #fff;
 }
 nav{
     display: none;
+}
+.grid .a{
+    width: 95%;
+    margin: 0 auto;
 }
 }

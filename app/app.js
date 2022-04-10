@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded",()=>{
-    let pageH = document.querySelector(".page_hide")
+    let count = 1
+    let regMail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+    let pageH = document.querySelector(".page_show")
     let buttonMenu = document.querySelector(".center")
     let butt_sumbit_pc = document.querySelector(".btn_submit_pc")
     buttonMenu.addEventListener('click',()=>{
-        pageH.classList.toggle("page_show")
+        count+=1
+        if(count%2==0){
+            pageH.classList.remove("page_show")
+            pageH.classList.add("page_hide")
+        }else{
+            pageH.classList.remove("page_hide")
+            pageH.classList.add("page_show")
+        }
+      
 
     })
-    const email_test = "aza@gmail.com"
-    const mdp_test = "toor"
-
+  
 const User = {
 
     mail_user_pc : document.querySelector(".email_input").value,
@@ -23,10 +31,15 @@ const User = {
     let btn_submit_pc_js = document.querySelector(".btn_submit_pc")
     let btn_submit_mob_js = document.querySelector(".btn_submit_mob")
 
-    btn_submit_pc_js.addEventListener("click",(e)=>{
+   btn_submit_pc_js.addEventListener("click",(e)=>{
+    e.preventDefault()
+        localStorage.setItem("password",User.pwd_user_pc.value)
+        localStorage.setItem("mail",User.mail_user_pc.vak)
 
-        e.preventDefault()
-    if (mdp_test == User.pwd_user_pc) {
+
+    if ((User.mail_user_pc.match(regMail)&&(User.pwd_user_pc=!1))) {
+
+
         Swal.fire(
             'Bienvenu!',
             'Dans votre espace!',
@@ -45,10 +58,12 @@ const User = {
     }
 })
 
-btn_submit_mob_js.addEventListener("click",(event)=>{
-
-    event.preventDefault()
-if (mdp_test === User.pwd_user_mob && email_test == User.mail_user_mob) {
+btn_submit_mob_js.addEventListener("click",(e)=>{
+    
+    e.preventDefault()
+    localStorage.setItem("password",User.pwd_user_mob.value)
+    localStorage.setItem("mail",User.mail_user_mob.value)
+if (regMail="ddd") {
     Swal.fire(
         'Bienvenu!',
         'Dans votre espace!',
