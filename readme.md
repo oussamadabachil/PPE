@@ -103,4 +103,4 @@ J'ai utilisé la bibliotheque SweetAlert pour des popups plus designs et dynamiq
 
 ### Finalement le lien de la page WEB
 
-[Allez la voir](https://sweetalert2.github.io "The best alerts  design").
+[Allez la voir](https://oussamadabachil.github.io/PPE/ "Page Web Design").
