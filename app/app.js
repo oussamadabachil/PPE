@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         pageH.classList.toggle("page_show")
 
     })
-    let email_test = "aza@gmail.com"
-    let mdp_test = "toor"
+    const email_test = "aza@gmail.com"
+    const mdp_test = "toor"
 
 const User = {
 
@@ -23,16 +23,16 @@ const User = {
     let btn_submit_pc_js = document.querySelector(".btn_submit_pc")
     let btn_submit_mob_js = document.querySelector(".btn_submit_mob")
 
-    btn_submit_pc_js.addEventListener("click",(event)=>{
+    btn_submit_pc_js.addEventListener("click",(e)=>{
 
-        event.preventDefault()
-    if (mdp_test === User.pwd_user_pc && email_test === User.mail_user_pc) {
+        e.preventDefault()
+    if (mdp_test == User.pwd_user_pc) {
         Swal.fire(
             'Bienvenu!',
             'Dans votre espace!',
             'success'
           )
-          
+
     } else {
         Swal.fire({
             icon: 'error',
