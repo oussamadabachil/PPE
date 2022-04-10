@@ -4,7 +4,8 @@ font-size: 62.5%;
 /* 16px * 62,5 10.00rem */
 }
 body{
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../asset/zizi.jpeg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../asset/background_tree.jpeg
+    );
     background-position: center;
     background-size: cover;
     font: 1.6rem sans-serif;
@@ -43,7 +44,7 @@ img{
 /**/
 
 main{
-    width: 100%;
+    max-width: 100%;
  
 }
 
